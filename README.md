@@ -39,6 +39,9 @@ WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
 ```
 
+## Contributing
+Contributions to this project are welcome from anyone. Before contributing, please ensure you have the following prerequisites: VSCode and Node.js installed on your system and all necessary modules downloaded from npm (inquirer version 8.2.4). This project primarily utilizes JavaScript, so having a basic understanding of JS will be beneficial. Your feedback and suggestions are highly appreciated.
+
 ## License
 This application is covered by the following license: MIT License
 
