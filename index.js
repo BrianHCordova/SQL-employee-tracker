@@ -10,7 +10,7 @@ const employee_db = new Pool(
     },
 )
 
-// function mainFunction(){
+function mainFunction(){
 inquirer
 .prompt([
     {
@@ -46,9 +46,10 @@ inquirer
     } else if (data.selections==='Add Department:'){
         tracker = addDepartment()
     } else if (data.selections==='Quit'){
-        return ('Thank you for playing.')
+        return console.log('Thank you for playing.')
     }  
-});
+})};
+mainFunction()
 function addEmployee(){
     inquirer
     .prompt([
@@ -80,7 +81,7 @@ function addEmployee(){
     ])
     .then ((data) =>{
         employee_db.query('INSERT INTO employee(first_name, last_name, role_id)VALUES($1, $2, $3)', [data.firstName, data.lastName, '1'])
-        // mainFunction()
+        mainFunction()
     })
 };
 function employeeTable(){
@@ -89,7 +90,7 @@ function employeeTable(){
             console.log(err);
         }
         console.table(rows);
-        // mainFunction()
+        mainFunction()
     })
 }
 
@@ -115,7 +116,7 @@ function addRole(){
     ])
     .then ((data) =>{
         employee_db.query('INSERT INTO role(title, salary, department_id)VALUES($1, $2, $3)', [data.role, data.salary, '1'])
-        // mainFunction()
+        mainFunction()
     })
 }
 function viewRole(){
@@ -124,7 +125,7 @@ function viewRole(){
             console.log(err);
         }
         console.table(rows);
-        // mainFunction()
+        mainFunction()
     })
 }
 
@@ -139,7 +140,7 @@ function addDepartment(){
     ])
     .then ((data) =>{
         employee_db.query('INSERT INTO department (name) VALUES($1)', [data.dapartment])
-        // mainFunction()
+        mainFunction()
     })
 };
 function departmentTable(){
@@ -148,6 +149,6 @@ function departmentTable(){
             console.log(err);
         }
         console.table(rows);
-        // mainFunction()
+        mainFunction()
     })
 }

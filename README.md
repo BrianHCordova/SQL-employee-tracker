@@ -1,8 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # SQL-employee-tracker
 
-## Your Task
-
+## The Task
 Developers frequently have to create interfaces that allow non-developers to easily view and interact with information stored in databases. These interfaces are called **content management systems (CMS)**. This assignment builds a command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and PostgreSQL.
 
 ## Installation 
@@ -51,3 +50,7 @@ Feel free to contact me below with any questions or suggestions:
 - [Github](https://github.com/BrianHCordova)
 
 - [Email Address](mailto:briancordova@yahoo.com)
+
+- [YouTube](https://youtu.be/h_ScMzKrGPs)
+
+- [Github Repo](https://github.com/BrianHCordova/SQL-employee-tracker)
